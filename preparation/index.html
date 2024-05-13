@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Scoreboard - Preparation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Preparation</h1>
+    <div id="teamA">
+        <h2>Team A Settings</h2>
+        <label for="teamA_fullname">Full Name:</label>
+        <input type="text" id="teamA_fullname"><br>
+        <label for="teamA_shortname">Short Name:</label>
+        <input type="text" id="teamA_shortname"><br>
+        <label for="teamA_logo">Logo:</label>
+        <input type="file" id="teamA_logo" accept="image/*"><br> <!-- accept="image/*" akzeptiert nur Bilddateien -->
+        <label for="teamA_color">Color:</label>
+        <input type="color" id="teamA_color"><br>
+        <label for="teamA_ranking">Ranking:</label>
+        <select id="teamA_ranking">
+            <!-- Options for ranking -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- Add more options as needed -->
+            <option value="20">20</option>
+        </select><br>
+        <label for="teamA_league">League:</label>
+        <input type="text" id="teamA_league"><br>
+    </div>
+    <div id="teamB">
+        <h2>Team B Settings</h2>
+        <label for="teamB_fullname">Full Name:</label>
+        <input type="text" id="teamB_fullname"><br>
+        <label for="teamB_shortname">Short Name:</label>
+        <input type="text" id="teamB_shortname"><br>
+        <label for="teamB_logo">Logo:</label>
+        <input type="file" id="teamB_logo" accept="image/*"><br> <!-- accept="image/*" akzeptiert nur Bilddateien -->
+        <label for="teamB_color">Color:</label>
+        <input type="color" id="teamB_color"><br>
+        <label for="teamB_ranking">Ranking:</label>
+        <select id="teamB_ranking">
+            <!-- Options for ranking -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- Add more options as needed -->
+            <option value="20">20</option>
+        </select><br>
+        <label for="teamB_league">League:</label>
+        <input type="text" id="teamB_league"><br>
+    </div>
+    <div id="otherSettings">
+        <h2>Other Settings</h2>
+        <label for="timer_direction">Timer Direction:</label>
+        <select id="timer_direction">
+            <option value="up">Up</option>
+            <option value="down">Down</option>
+        </select><br>
+        <label for="max_time">Max Time:</label>
+        <input type="time" id="max_time"><br>
+        <label for="break_time">Break Time:</label>
+        <input type="time" id="break_time"><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date"><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time"><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location"><br>
+        <label for="championship">Championship:</label>
+        <input type="text" id="championship"><br>
+    </div>
+    <button onclick="saveSettings()">Save Settings</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

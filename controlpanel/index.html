@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Scoreboard - Control Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Control Panel</h1>
+    </header>
+
+    <div id="match_details">
+        <div class="match-details">
+            <h2>Match Details</h2>
+            <p>Date: <span id="date"></span></p>
+            <p>Time: <span id="time"></span></p>
+            <p>Location: <span id="location"></span></p>
+            <p>Championship: <span id="championship"></span></p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div id="teamA" class="grid-item">
+            <h2><span id="teamA_shortname">Team A</span></h2>
+            <div class="team-info">
+                <p><img src="" id="teamA_logo" alt="Team A Logo"></p>
+                <p>Score: <span id="teamA_score">0</span></p>
+                <p><span id="teamA_fullname"></span></p>
+                <p>Ranking: <span id="teamA_ranking"></span></p> <!-- Ranking field -->
+                <p>League: <span id="teamA_league"></span></p> <!-- League field -->
+                <p>Penalty Time: <span id="teamA_penalty"></span></p>
+                <p><input type="color" id="teamA_color_input" readonly></p>
+            </div>
+            <div class="team-controls">
+                <h3>Controls</h3>
+                <div class="button-container">
+                    <button onclick="adjustScore('teamA', 1)">Score +</button>
+                    <button onclick="adjustScore('teamA', -1)">Score -</button>
+                    <button onclick="addPenalty('teamA', 2)">Add 2min Penalty</button>
+                    <button onclick="addPenalty('teamA', 4)">Add 4min Penalty</button>
+                    <button onclick="addPenalty('teamA', 5)">Add 5min Penalty</button>
+                    <button onclick="toggleTeamGoal('teamA')">Team A Goal</button>
+                    <button onclick="toggleEmptyNet('teamA')">Team A Empty Net</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="global_controls" class="grid-item">
+            <h2>Global Controls</h2>
+            <div class="global-controls">
+                <div id="main_timer_up">
+                    <h3>Timer (Up)</h3>
+                    <span id="main_timer_up_display">00:00</span>
+                </div>
+                <div id="main_timer_down">
+                    <h3>Timer (Down)</h3>
+                    <span id="main_timer_down_display">00:00</span>
+                </div>
+                <div id="period">
+                    <h3>Period</h3>
+                    <span id="period_display">1st</span>
+                </div>
+                <div id="break_timer">
+                    <h3>Break Timer</h3>
+                    <span id="break_timer_display">00:00</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="startStopTimer()">Start/Stop Timer</button>
+                <button onclick="resetTimer()">Reset Timer</button>
+                <button onclick="adjustPeriod(1)">Period +</button>
+                <button onclick="adjustPeriod(-1)">Period -</button>
+                <button onclick="adjustMainTimerMinutes(1)">Timer (UP) Minutes +</button>
+                <button onclick="adjustMainTimerMinutes(-1)">Timer (UP) Minutes -</button>
+                <button onclick="adjustMainTimerSeconds(1)">Timer (UP) Seconds +</button>
+                <button onclick="adjustMainTimerSeconds(-1)">Timer (UP) Seconds -</button>
+                <input type="file" id="json_file_input">
+                <button onclick="importJSON()">Import JSON</button>
+                <button onclick="resetToDefault()">Reset JSON</button>
+                <button onclick="toggleShowTimer()">Toggle Timer Visibility</button>
+                <button onclick="togglePreGameInfo()">PreGame</button>
+                <button onclick="resetBreakTimer()">Reset Break Timer</button>
+            </div>
+        </div>
+
+        <div id="teamB" class="grid-item">
+            <h2><span id="teamB_shortname">Team B</span></h2>
+            <div class="team-info">
+                <p><img src="" id="teamB_logo" alt="Team B Logo"></p>
+                <p>Score: <span id="teamB_score">0</span></p>
+                <p><span id="teamB_fullname"></span></p>
+                <p>Ranking: <span id="teamB_ranking"></span></p> <!-- Ranking field -->
+                <p>League: <span id="teamB_league"></span></p> <!-- League field -->
+                <p>Penalty Time: <span id="teamB_penalty"></span></p>
+                <p><input type="color" id="teamB_color_input" readonly></p>
+            </div>
+            <div class="team-controls">
+                <h3>Controls</h3>
+                <div class="button-container">
+                    <button onclick="adjustScore('teamB', 1)">Score +</button>
+                    <button onclick="adjustScore('teamB', -1)">Score -</button>
+                    <button onclick="addPenalty('teamB', 2)">Add 2min Penalty</button>
+                    <button onclick="addPenalty('teamB', 4)">Add 4min Penalty</button>
+                    <button onclick="addPenalty('teamB', 5)">Add 5min Penalty</button>
+                    <button onclick="toggleTeamGoal('teamB')">Team B Goal</button>
+                    <button onclick="toggleEmptyNet('teamB')">Team B Empty Net</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

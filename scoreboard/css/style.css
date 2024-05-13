@@ -1,0 +1,215 @@
+/* Grundlegende Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: space-around; /* Hier wird der Platz gleichmäßig zwischen den Elementen aufgeteilt */
+    align-items: center;
+    background-color: #1f2532;
+    color: #fff;
+    border-radius: 8px;
+    width: auto; /* Dadurch kann das Scoreboard die verfügbare Breite nutzen */
+    margin-top: 20px;
+    padding: 10px;
+    max-height: 65px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Team-Elemente */
+.teamA,
+.teamB,
+.global {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Text-Stile für Scoreboard-Elemente */
+span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Team-Scores */
+#team1Score,
+#team2Score {
+    color: #fff; /* Weiß für Team Scores */
+    font-size: 30px;
+}
+
+/* Team-Logos */
+img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Strafzeiten */
+.penalty-timer.left,
+.penalty-timer.right {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.penalty-timer.active {
+    visibility: visible;
+}
+
+/* Unterstrichene Teamnamen */
+.team-name {
+    position: relative;
+    font-weight: bold; /* Mach die Linie dicker */
+    width: auto; /* Flexible Breite basierend auf dem Inhalt */
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: -30px; /* Passen Sie die Position der Linie an */
+    width: 100%;
+    height: 25px; /* Dicke der Linie */
+}
+
+.notification {
+    position: fixed;
+    top: 20px; /* Adjust the top position to position it below the scoreboard */
+    left: 50%; /* Keep the left position centered */
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    justify-content: space-between; /* Align content evenly */
+    text-align: center; /* Center text horizontally */
+    width: 850px;
+    height: 65px; /* Set height to match scoreboard */
+    font-size: 36px; /* Increase font size */
+    font-weight: bold;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally center content */
+    width: 100%; /* Occupy full width of notification */
+}
+
+.notification-content span {
+    font-size: 36px; /* Increase font size */
+}
+
+.notification-content img {
+    margin-left: 10px; /* Add some space between text and logo */
+}
+
+.empty-net {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.empty-net.left {
+    margin-left: 5px;
+}
+
+.empty-net.right {
+    margin-right: 5px;
+}
+
+.border-line {
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* CSS für die Benachrichtigung */
+.pre-game-notification-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Breite auf 90% setzen */
+    max-width: 900px; /* Maximale Breite der Benachrichtigung auf 600px begrenzen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen */
+    max-height: fit-content; /* Breite auf 90% setzen */
+}
+
+.notification-title {
+    font-size: 50px; /* Schriftgröße des Titels auf 24px verringern */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column-content {
+    flex: 1; /* Alle Spalten sollen gleich breit sein */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-content img {
+    max-width: 80px; /* Maximale Breite des Logos auf 80px verringern */
+    max-height: 80px; /* Maximale Höhe des Logos auf 80px verringern */
+    margin-top: 10px;
+}
+
+/* Zusätzliche Stile für den Inhalt der Benachrichtigungsspalten */
+.column-content div {
+    margin-bottom: 5px; /* Abstand zwischen den Textelementen in den Spalten verringern */
+    font-size: 30px; /* Schriftgröße auf 18px setzen */
+    font-weight: bold; /* Normale Schriftstärke verwenden */
+    text-align: center; /* Text vertikal zentrieren */
+}
+
+/* CSS für die Benachrichtigung */
+.break-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.break-notification-content {
+    display: flex;
+    align-items: center;
+}
+
+.break-notification-content span {
+    margin-right: 10px;
+}

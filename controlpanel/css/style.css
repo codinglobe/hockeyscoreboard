@@ -1,0 +1,161 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Match details styles */
+#match_details {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.match-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.match-details h2 {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the heading */
+}
+
+.match-details p {
+    margin-bottom: 5px;
+}
+
+/* Container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Lines added for clarity */
+}
+
+/* Global controls styles */
+.global-controls {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Lines added for clarity */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns */
+    grid-gap: 20px;
+    justify-content: center; /* Center align horizontally */
+}
+
+/* Timer display styles */
+#main_timer_up_display,
+#main_timer_down_display,
+#period_display,
+#break_timer_display {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Center align the text */
+}
+
+/* Button styles */
+.button-container {
+    display: flex; /* Changed to flex to allow button width adjustment */
+    justify-content: space-around; /* Spacing between buttons */
+    flex-wrap: wrap; /* Wrap buttons to new line if necessary */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 45%; /* Adjusted width for better layout */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional Styles */
+#teamA .button-container button,
+#teamB .button-container button,
+.grid-global-controls {
+    display: grid;
+    grid-template-columns: auto auto; /* Adjusted */
+    grid-gap: 20px;
+}
+
+#teamA .button-container button,
+#teamB .button-container button,
+.grid-global-controls > div {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-global-controls > div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Customized Structure */
+#global_controls h2 {
+    text-align: center; /* Center align the heading */
+}
+
+#main_timer_up,
+#main_timer_down,
+#period,
+#break_timer {
+    text-align: center; /* Center align the text */
+}
+
+/* Logo-Styles */
+img#teamA_logo,
+img#teamB_logo {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto 10px; /* Center align horizontally and add bottom margin */
+}
+
+/* Team info styles */
+.team-info p {
+    font-size: 18px;
+    text-align: center; /* Center align the text */
+    font-weight: bold;
+}
+
+/* Center align h2 elements for teamA_shortname and teamB_shortname */
+#teamA h2,
+#teamB h2 {
+    text-align: center;
+}

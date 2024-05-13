@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <div class="empty-net left" id="team1EmptyNet">Empty <br> Net</div> <!-- Empty Net for Team A -->
+            <div class="teamA">
+                <div class="penalty-timer left" id="team1PenaltyTimer"></div> <!-- Penalty timer for Team A -->
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamA">
+                <span id="team1Score">0</span>
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamA">
+                <div class="team-name">
+                    <span id="team1Name">Team A</span> <!-- Team A name -->
+                    <div class="underline" id="team1Underline"></div> <!-- Thick underline -->
+                </div>
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamA">
+                <img src="" alt="Team A Logo" id="team1Logo"> <!-- Leave src attribute empty -->
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="global">
+                <span id="timerDisplay">00:00</span>
+                <span id="periodDisplay">1st Period</span>
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamB">
+                <img src="" alt="Team B Logo" id="team2Logo"> <!-- Leave src attribute empty -->
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamB">
+                <div class="team-name">
+                    <span id="team2Name">Team B</span> <!-- Team B name -->
+                    <div class="underline" id="team2Underline"></div> <!-- Thick underline -->
+                </div>
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamB">
+                <span id="team2Score">0</span>
+                <div class="border-line"></div> <!-- Border line -->
+            </div>
+            <div class="teamB">
+                <div class="penalty-timer right" id="team2PenaltyTimer"></div> <!-- Penalty timer for Team B -->
+            </div>
+            <div class="empty-net right" id="team2EmptyNet">Empty <br> Net</div> <!-- Empty Net for Team B -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

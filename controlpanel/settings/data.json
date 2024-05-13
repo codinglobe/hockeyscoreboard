@@ -1,0 +1,42 @@
+{
+    "teamA": {
+        "fullname": "IHC Grenchen",
+        "logo": "https:\/\/localhost\/scoreboard\/assets\/images\/Inlinehockey\/1.%20Liga\/Gruppe%20A\/IHC%20Grenchen\/Logo.svg",
+        "shortname": "Grenchen",
+        "color": "#0000ff",
+        "ranking": "1",
+        "league": "1. Liga Gr.A",
+        "score": 0,
+        "penaltyTimers": []
+    },
+    "teamB": {
+        "fullname": "SHC La Neuveville",
+        "logo": "https:\/\/localhost\/scoreboard\/assets\/images\/Inlinehockey\/1.%20Liga\/Gruppe%20A\/SHC%20La%20Neuveville\/la-neuveville.jpg",
+        "shortname": "La Neuveville",
+        "color": "#ffffff",
+        "ranking": "2",
+        "league": "1. Liga Gr.A",
+        "score": 0,
+        "penaltyTimers": []
+    },
+    "otherSettings": {
+        "break_time": "10:00",
+        "period": "1st",
+        "date": "28.04.2024",
+        "time": "18:00",
+        "location": "Schulhaus Eichholz, Grenchen",
+        "championship": "1. Liga Gr. A",
+        "showtimer": true,
+        "teamGoals": {
+            "teamA": false,
+            "teamB": false
+        },
+        "emptyNet": {
+            "teamA": false,
+            "teamB": false
+        },
+        "timerDisplay": 0,
+        "preGameInfo": false,
+        "breakTimerRunning": false
+    }
+}
