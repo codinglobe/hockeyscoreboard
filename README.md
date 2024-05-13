@@ -9,6 +9,7 @@ HockeyScoreboard ist eine moderne Webanwendung zum Verfolgen von Eishockey-Spiel
 - Responsive Benutzeroberfläche für Desktop und Mobilgeräte
 - Öffentliche Spielübersicht für Fans zum Mitverfolgen der Ergebnisse
 - Verwaltung von Mannschaften, Spielern und Ligen durch Administratoren
+- Integration in OBS für Livestreaming von Spielergebnissen
 
 ## Installation
 
@@ -18,9 +19,13 @@ HockeyScoreboard ist eine moderne Webanwendung zum Verfolgen von Eishockey-Spiel
 4. Erstellen Sie eine `.env`-Datei und konfigurieren Sie die erforderlichen Umgebungsvariablen.
 5. Starten Sie den Entwicklungsserver mit `npm run dev`.
 
+## Verwendung mit OBS
+
+HockeyScoreboard kann in OBS für Livestreaming integriert werden. Aktuell unterstützt die Anwendung die Ausgabe von JSON-Dateien. Um Bilder wie Teamlogos anzuzeigen, muss der Pfad zu den Bildern manuell angepasst werden.
+
 ## Mitwirkung
 
-Wir freuen uns über Beiträge zur Verbesserung von HockeyScoreboard. Bitte lesen Sie die [Mitwirkungsrichtlinien](CONTRIBUTING.md), bevor Sie einen Pull Request einreichen.
+Wir freuen uns über Beiträge zur Verbesserung von HockeyScoreboard. Bitte teilen Sie zunächst Ihre Verbesserungsvorschläge mit und implementieren Sie keine Änderungen direkt. Lesen Sie die [Mitwirkungsrichtlinien](CONTRIBUTING.md), bevor Sie einen Pull Request einreichen.
 
 ## Lizenz
 
